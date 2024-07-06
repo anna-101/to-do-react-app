@@ -1,0 +1,281 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+/* .submit-btn {
+  span {
+    color: red;
+  }
+  img {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+  }
+  border: 1px solid black;
+  width: fit-content;
+  margin: 0px 0px 0px 5px;
+} */
+
+h1{
+  font-family: cursive;
+}
+
+.form {
+  display: flex;
+}
+
+.todo_left {
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  
+  gap: 12px;
+}
+
+.todo_right {
+  gap: 4px;
+}
+
+.form input {
+  background-color: #1f2937;
+  color: #fff;
+  width: 300%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 11px;
+  padding: 12px;
+  font-family: cursive;
+}
+
+/* .form div {
+  width: auto;
+  height: 50px;
+  border-radius: 11px;
+  border: none;
+  background-color: rgb(228, 209, 228);
+  padding: 12px;
+} */
+
+  .submit-btn {
+  border: none;
+  width: 100%;
+  border-radius: 11px;
+  height: 50px;
+  background-color: rgb(159 149 159);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+.add-icon {
+  width: 20px;
+    height: fit-content;
+    /* margin: 10px 15px 10px 15px; */
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: rgb(194, 129, 194);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  padding: 0px;
+}
+
+header img{
+  width: 50px;
+    height: 50px;
+}
+
+.form {
+  align-self: center;
+  width: 97%;
+  max-width: 455px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 38px;
+}
+
+.form label {
+  width: 90%;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: #0a0a0a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.todototal_section{
+  border: 1px solid #c2b39a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  align-self: center;
+  width: 100%;
+  height: 100px;
+  padding: 12px;
+  border-radius: 11px;
+  margin-top: 20px;
+}
+
+.text_large{
+  font-size: 20px;
+}
+
+.todo_list {
+  align-self: center;
+  width: 300%;
+  max-width: 455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  gap: 27px;
+}
+
+.todo_item,
+.edit-form input{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  width: 300%;
+  max-width: 455px;
+  font-size: 16px;
+  background-color: #dfd6d6;
+  color: #252525;
+  padding: 12px;
+  outline: none;
+  border: none;
+}
+
+.todo_left{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.todo_right{
+  gap: 4px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.todo_left {
+  display: flex;
+  align-items: center;
+}
+
+.todo_right button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.todo_right button svg {
+  fill: #c2b39a;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-items{
+  display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-input{
+  display: flex;
+    width : 300px;
+    height: 50px;
+    background-color: ivory;
+    border: none;
+    border-radius: 11px;
+    outline: none;
+}
+
+.todo-text{
+  color : black;
+  word-break: break-all;
+    white-space: normal;
+    text-wrap: balance;
+}
